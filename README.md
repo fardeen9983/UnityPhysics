@@ -45,3 +45,16 @@ Components:
     * Continous : For fast moving objects interacting with static geometry
     * Continous dynaimc : like Continous but for interaction with dynamic objects
 9. Constraints : Prevent movement and rotation in any axis
+
+## Add Force
+It is a function of rigid body which allows to add force/ physics to moving object change their positon and rotation.
+
+It takes two arg (one optional):
+1. The vector denoting force magnitude and direction to be applied  
+2. ForceMode (optional) :
+    * Force (default): continous changes affected by mass
+    * Acceleration : Continous changes not affected by mass
+    * Impulse : Instance change affected by mass
+    * VelocityChange : Instance change not affected by mass
+
+Effectiveness of the Force applied depends on object's mass and drag
