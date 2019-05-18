@@ -65,3 +65,16 @@ This function again a part of rigid body applies torque across a specified axis.
 Unity uses Left hand screw rule so torque will added in the upwards direction
 
 Angular drag limits the ease of action by torque.
+## Physics Material
+Instead of affecting the appearnace of the object these affect the way objects react to physics engine by controlling physics elements like Friction 
+
+Physics materials are added to the object collider and not as individual component
+
+They can be created from the Create menu in the project panel like any material
+
+Components:
+1. Dynamic Friction : The frcition applied when the object is moving.
+2. Static friction : The friction applied when the object is static .i.e, the force to be applied on the object to change its position from static
+3. Bounciness : Controls the bounciness of the object
+4. Friction and bounce combine determine how the objects react to other objects with physics material
+5. Friction direction lets you choose friction control on axis and dynamic/static friction change friction behaviour across those selcted axis
