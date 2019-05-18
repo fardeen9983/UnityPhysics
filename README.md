@@ -58,3 +58,10 @@ It takes two arg (one optional):
     * VelocityChange : Instance change not affected by mass
 
 Effectiveness of the Force applied depends on object's mass and drag
+## Add Torque
+This function again a part of rigid body applies torque across a specified axis. It has two components:
+1. (Torque vector) The axis around which the torque has to be applied (Horizontal,Vertical)/(x,y,z) and magnitude of the torque 
+2. The ForceMode same as AddForce
+Unity uses Left hand screw rule so torque will added in the upwards direction
+
+Angular drag limits the ease of action by torque.
